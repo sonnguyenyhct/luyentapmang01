@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let arrayInt = [1,20,30,2,3,40,11,8,12,2];
+        let max = 0;
+        for (let count = 0; count < arrayInt.length; count++){
+            if (arrayInt[count] > max){
+                max = arrayInt[count];
+            }
+        }
+        alert("Phần tử có giá trị lớn nhất trong mảng là " + max + " vị trí của phần tử đó là : " + arrayInt.indexOf(max));
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    let numbers = [];
+    for (let count = 0; count < 10; count++){
+        let inputArray = parseInt(prompt("Nhập vào phần tử "));
+        numbers.push(inputArray);
+    }
+    let intV = parseInt(prompt("Nhập vào số nguyên V "));
+    if (numbers.indexOf(intV) !== -1){
+        alert("V is in the array");
+        let indexV = numbers.indexOf(intV)
+        for (; indexV < numbers.length ; indexV++){
+            numbers[indexV] = numbers[indexV + 1];
+        }
+        numbers[numbers.length - 1] = null;
+        alert(numbers);
+    }else {
+        alert("V is not in the array");
+    }
+
+
+</script>
+</body>
+</html>

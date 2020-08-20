@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        let arrayInt = [1,20,30,2,3,4,11,12,8,2];
+        let display = "";
+        let num = 0;
+        for (let count = 0; count < arrayInt.length; count++){
+            if (arrayInt[count] >= 10){
+                display += arrayInt[count] + " , ";
+                num += 1;
+            }
+        }
+        display = display.substr(0,(display.length - 2));
+        alert("Có " + num + " số nguyên lớn hơn 10 là : " + display );
+    </script>
+</body>
+</html>

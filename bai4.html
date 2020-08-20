@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+
+        for (let count = 0; count < numArray; count++){
+            let inputArray = parseInt(prompt("Nhập vào số nguyên"));
+            numbers.push(inputArray);
+        }
+        for (let count = 0; count < numArray/2; count++){
+            let change = 0;
+            change = numbers[count];
+            numbers[count] = numbers[numArray-count-1];
+            numbers[numArray-count- 1] = change;
+        }
+        alert("Mảng đảo ngược là : " + numbers);
+
+    </script>
+</body>
+</html>

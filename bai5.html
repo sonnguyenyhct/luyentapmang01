@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    let numbers = [];
+    let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+    for (let count = 0; count < numArray; count++){
+        let inputArray = parseInt(prompt("Nhập vào phần tử "));
+        numbers.push(inputArray);
+        if (Number.isInteger(numbers[count]) && numbers[count] < 0){
+            num += 1;
+        }
+    }
+    alert("Số lượng số nguyên âm trong mảng là : " + num);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let arrayInt = [1,2,3,4,5,6];
+    let max = 0;
+    let total = 0;
+    for (let count = 0; count < arrayInt.length; count++){
+        if (arrayInt[count] > max){
+            max = arrayInt[count];
+        }
+        total += arrayInt[count];
+    }
+    let averagetotal = total/arrayInt.length;
+    alert("Phần tử có giá trị lớn nhất trong mảng là " + max + " Giá trị trung bình là : " + averagetotal);
+</script>
+</body>
+</html>
